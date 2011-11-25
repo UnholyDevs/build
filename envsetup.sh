@@ -130,7 +130,7 @@ function check_product()
         return
     fi
 
-    if (echo -n $1 | grep -q -e "^Unholy_") ; then
+    if (echo -n $1 | grep -q -e "^unholy_") ; then
        UNHOLY_BUILD=$(echo -n $1 | sed -e 's/^unholy_//g')
     else
        UNHOLY_BUILD=
