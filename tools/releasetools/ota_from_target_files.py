@@ -463,7 +463,7 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
 
   script.Print("\m/\m/\m/\m/\m/\m/\m/\m/\m/\m/\m/\m/\m/\m/")
   script.Print(" ")
-  script.Print("          ||| ANDROID 7.1.2 |||           ")
+  script.Print("          ||| ANDROID 8.0.0 |||           ")
   script.Print(" ")
   script.Print("_____  __      ______       ______        ");
   script.Print("__  / / /_________  /__________  /____  __");
