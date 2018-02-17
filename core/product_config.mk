@@ -168,9 +168,9 @@ include $(BUILD_SYSTEM)/node_fns.mk
 include $(BUILD_SYSTEM)/product.mk
 include $(BUILD_SYSTEM)/device.mk
 
-# A CUSTOM build needs only the CUSTOM product makefiles.
-ifneq ($(CUSTOM_BUILD),)
-  all_product_configs := $(shell ls vendor/aquarios/$(CUSTOM_BUILD).mk)
+# An Unholy build needs its makefiles
+ifneq ($(UNHOLY_BUILD),)
+  all_product_configs := $(shell ls vendor/unholy/products/unholy_$(UNHOLY_BUILD).mk)
 else
   ifneq ($(strip $(TARGET_BUILD_APPS)),)
   # An unbundled app build needs only the core product makefiles.
@@ -181,7 +181,7 @@ else
     # files in the tree.
     all_product_configs := $(get-all-product-makefiles)
   endif # TARGET_BUILD_APPS
-endif # CUSTOM_BUILD
+endif # UNHOLY_BUILD
 
 all_named_products :=
 
