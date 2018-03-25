@@ -18,7 +18,7 @@
 
 PRODUCT_PROPERTY_OVERRIDES := \
     ro.config.notification_sound=Pop.ogg \
-    ro.config.alarm_alert=Carbon.ogg
+    ro.config.alarm_alert=Spokes.ogg
 
 PRODUCT_PACKAGES += \
     ContactsProvider \
